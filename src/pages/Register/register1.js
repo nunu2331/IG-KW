@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
-import { colors } from '../config/Colors';
-import PhoneInputForm from '../components/PhoneInputForm';
-import PrimaryButton from '../components/PrimaryButton';
+import { colors } from '../../config/Colors';
+import PhoneInputForm from '../../components/PhoneInputForm';
+import PrimaryButton from '../../components/PrimaryButton';
 export class Register1 extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +28,7 @@ export class Register1 extends Component {
           <View style={styles.avatarWrapper}>
             <Image
               style={styles.avatar}
-              source={require('../assets/images/avatar.jpg')}
+              source={require('../../assets/images/avatar.jpg')}
             />
           </View>
           <View style={styles.switchTitleWrapper}>

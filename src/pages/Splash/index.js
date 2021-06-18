@@ -13,7 +13,7 @@ const Splash = ({navigation})=> {
         <View style={styles.iconContainer}>
           <Image
             style={styles.icon}
-            source={require('../assets/images/icon.png')}
+            source={require('../../assets/images/icon.png')}
           />
         </View>
         <View style={styles.logoContainer}>
@@ -21,7 +21,7 @@ const Splash = ({navigation})=> {
           <View style={styles.logoTextWrapper}>
             <Image
               style={styles.logo}
-              source={require('../assets/images/facebookTextLogo.png')}
+              source={require('../../assets/images/facebookTextLogo.png')}
             />
           </View>
         </View>

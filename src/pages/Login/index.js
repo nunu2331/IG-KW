@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Image, Keyboard, ScrollView, KeyboardAvoidingView, TouchableWithoutFeedback } from 'react-native';
-import { colors } from '../config/Colors';
+import { colors } from '../../config/Colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import PrimaryInputForm from '../components/PrimaryInputForm';
-import PrimaryButton from '../components/PrimaryButton';
+import PrimaryInputForm from '../../components/PrimaryInputForm';
+import PrimaryButton from '../../components/PrimaryButton';
 
 export class Login extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ export class Login extends Component {
     this.setState({ languageModalVisible: !this.state.languageModalVisible });
   };
   onPressNextLoginBtn = () => {
-      this.props.navigation.navigate('Dashboard')
+      this.props.navigation.navigate('BottomTab')
   }
   render() {
     return (
@@ -44,7 +44,7 @@ export class Login extends Component {
                 <Image
                   resizeMode={'contain'}
                   style={styles.instaLogo}
-                  source={require('../assets/images/instagramLogo.png')}
+                  source={require('../../assets/images/instagramLogo.png')}
                 />
               </View>
 

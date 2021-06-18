@@ -17,7 +17,7 @@ const Feed = () => {
           <Text style={styles.headerTitle}> Catherine</Text>
         </View>
         <Image
-          style={styles.icon}
+          style={styles.feedicon}
           source={require('../assets/images/dots.jpg')}
         />
       </View>
@@ -47,14 +47,14 @@ const Feed = () => {
           source={require('../assets/images/bookmarkfeed.png')}
         />
       </View>
-      <View style={styles.underLineWRapper}>
+      {/* <View style={styles.underLineWRapper}>
         <View style={styles.underLine} />
-      </View>
+      </View> */}
       <View style={styles.likesAndCommentsWrapper}>
         <Text style={styles.likesTitle}> 1,124 Likes</Text>
         <View style={styles.feedtitle}>
-          <Text style={styles.headerTitle}> Catherine</Text>
-          <Text style={styles.likesTitle}> Missing Summary </Text>
+          <Text style={styles.postTitle}> Catherine</Text>
+          <Text style={styles.likesTitle}> Missing Summary  Missing Summary </Text>
         </View>
 
       </View>
@@ -90,9 +90,16 @@ export const styles = StyleSheet.create({
     marginTop: 5,
   },
   icon: {
-    width: 40,
-    height: 40,
-    opacity: 0.5,
+    width: 25,
+    height: 25,
+    marginRight: 10,
+
+  },
+  feedicon: {
+    width: 25,
+    height: 25,
+    marginVertical: 10,
+    marginRight: 10,
   },
   headerLeftWrapper: {
     flexDirection: 'row',
@@ -100,7 +107,11 @@ export const styles = StyleSheet.create({
     marginLeft: 5,
   },
   headerTitle: {
-    fontSize: 18,
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  postTitle: {
+    fontSize: 14,
     fontWeight: '700',
   },
   feedImage: {
@@ -113,6 +124,7 @@ export const styles = StyleSheet.create({
   },
   feddimageFooterLeftWrapper: {
     flexDirection: 'row',
+    justifyContent: 'center'
   },
   underLine: {
     height: 1,
@@ -133,7 +145,7 @@ export const styles = StyleSheet.create({
 
   },
   likesTitle: {
-    fontSize: 17,
+    fontSize: 14,
     fontWeight: '600',
   },
   feedtitle: {

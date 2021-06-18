@@ -9,9 +9,9 @@ import {
   FlatList,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import PrimaryButton from '../components/PrimaryButton';
-import {colors} from '../config/Colors';
-import SearchBox from '../components/SearchBox';
+import PrimaryButton from '../../components/PrimaryButton';
+import {colors} from '../../config/Colors';
+import SearchBox from '../../components/SearchBox';
 
 const DATA = [
   {id: '1', title: 'Language 1', subTitle: ' '},
@@ -59,7 +59,7 @@ export class WelcomeAuth extends Component {
         <View style={styles.buttonsContainer}>
           <Image
             style={styles.instaLogo}
-            source={require('../assets/images/instagramLogo.png')}
+            source={require('../../assets/images/instagramLogo.png')}
           />
           <View style={styles.ButtonItemContainer}>
             <PrimaryButton

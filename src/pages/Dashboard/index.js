@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import {Text, View, StyleSheet, ScrollView, Image} from 'react-native';
-import {colors} from '../config/Colors';
-import Feed from '../components/Feed';
-import Stories from '../components/Stories';
+import React, { Component } from 'react';
+import { Text, View, StyleSheet, ScrollView, Image, TouchableWithoutFeedback } from 'react-native';
+import { colors } from '../../config/Colors';
+import Feed from '../../components/Feed';
+import Stories from '../../components/Stories';
 import Icon from 'react-native-vector-icons/FontAwesome';
 export class Dashboard extends Component {
   render() {
@@ -11,16 +11,16 @@ export class Dashboard extends Component {
         <View style={styles.header}>
           <Image
             style={styles.logoIG}
-            source={require('../assets/images/instagramLogo.png')}
+            source={require('../../assets/images/instagramLogo.png')}
           />
           <View style={styles.headerRightWrapper}>
             <Image
               style={styles.iconHeader}
-              source={require('../assets/images/likeheader.png')}
+              source={require('../../assets/images/likeheader.png')}
             />
             <Image
               style={styles.iconHeader}
-              source={require('../assets/images/dm.png')}
+              source={require('../../assets/images/dm.png')}
             />
           </View>
         </View>
@@ -29,33 +29,32 @@ export class Dashboard extends Component {
         </View> */}
 
         <ScrollView style={styles.feedContainer}
-        showsVerticalScrollIndicator={false}>
-          <Stories/>
+          showsVerticalScrollIndicator={false}>
+          <Stories />
           <Feed />
         </ScrollView>
-        <View style={styles.footer}>
-            <Image
-              style={styles.iconfooter}
-              source={require('../assets/images/homeclick.png')}
-              resizeMode='contain'
-            />
-            <Image
-              style={styles.iconfooter}
-              source={require('../assets/images/search.png')}
-            />
-            <Image
-              style={styles.iconfooter}
-              source={require('../assets/images/plus.png')}
-            />
-            <Image
-              style={styles.iconfooter}
-              source={require('../assets/images/bagshop.png')}
-            />
-            <Image
-              style={[styles.iconfooter, {borderRadius: 50}]}
-              source={require('../assets/images/face.jpeg')}
-            />
-        </View>
+        {/* <View style={styles.footer}>
+          <Image
+            style={[styles.iconfooter, { borderRadius: 50 }]}
+            source={require('../assets/images/homeclick.png')}
+          />
+          <Image
+            style={styles.iconfooter}
+            source={require('../assets/images/search.png')}
+          />
+          <Image
+            style={styles.iconfooter}
+            source={require('../assets/images/plus.png')}
+          />
+          <Image
+            style={styles.iconfooter}
+            source={require('../assets/images/bagshop.png')}
+          />
+          <Image
+            style={[styles.iconfooter, { borderRadius: 50 }]}
+            source={require('../assets/images/face.jpeg')}
+          />
+        </View> */}
       </View>
     );
   }
@@ -67,6 +66,7 @@ export const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flex: 1,
+    backgroundColor: colors.white,
   },
   header: {
     display: 'flex',

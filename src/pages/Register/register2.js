@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import PrimaryInputForm from '../components/PrimaryInputForm';
-import PrimaryButton from '../components/PrimaryButton';
+import PrimaryInputForm from '../../components/PrimaryInputForm';
+import PrimaryButton from '../../components/PrimaryButton';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-import { colors } from '../config/Colors';
+import { colors } from '../../config/Colors';
 export class SignUpScreen2 extends Component {
   render() {
     return (

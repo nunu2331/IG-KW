@@ -2,7 +2,9 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Splash,Register1,Register2, Login,Feed, WelcomeAuth} from '../pages';
 import Dashboard from '../pages/Dashboard';
-// import LoginScreen from '../pages/Login';
+import Profile from '../pages/Profile';
+import SearchScreen from '../pages/Search/SearchScreen';
+import MyTabs from '../components/BottomTab';
 
 const Stack = createStackNavigator();
 
@@ -25,6 +27,12 @@ const Router = () => {
                 headerShown: false
             }}/>
             <Stack.Screen name="Dashboard" component={Dashboard} options={{
+                headerShown: false
+            }}/>
+            <Stack.Screen name="Profile" component={Profile} options={{
+                headerShown: false
+            }}/>
+            <Stack.Screen name="BottomTab" component={MyTabs} options={{
                 headerShown: false
             }}/>
         </Stack.Navigator>
